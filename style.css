@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1440px;
+    height: 100vh;
+    background: #f2e9e2;
+    font-family: sans-serif;
+}
+
+
+.card {
+    min-height: 450px;
+    max-width: 600px;
+    display: flex;
+    margin: 170px auto;
+}
+
+.image-product {
+    height: 450px;
+    min-width: 300px;
+    border-bottom-left-radius: 13px;
+    border-top-left-radius: 13px;
+    background-image: url('./images/image-product-desktop.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card__body {
+    padding: 20px 30px 30px;
+    background: #fff;
+    border-bottom-right-radius: 13px;
+    border-top-right-radius: 13px;
+
+}
+.card_product {
+    margin-bottom: 15px;
+    color: #797983;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+
+.card__header {
+    margin-bottom: 25px;
+    max-width: 210px;
+    font-size: 30px;
+}
+
+.card__desc {
+    margin-bottom: 30px;
+    font-size: 17px;
+    color: #73737d;
+    opacity: .8;
+}
+
+.card__price {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.card__price__sale {
+    font-size: 26px;
+    margin-right: 20px;
+    color: #328267;
+    font-weight: 500;
+}
+
+.card__price__old {
+    font-size: 10px;
+    text-decoration: line-through;
+}
+
+.card__btn {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    color: #fff;
+    background: #328267;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.card__btn span {
+    margin-right: 10px;
+}
+
+.attribution {
+    margin-top: 20px;
+}
+
+@media (max-width: 375px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        max-width: 343px;
+        align-items: center;
+
+    }
+
+
+    .image-product {
+        width: 100%;
+        height: 240px;
+        border-radius: 0;
+        border-top-right-radius: 13px;
+        border-top-left-radius: 13px;
+        background-image: url('./images/image-product-mobile.jpg');
+            background-size: cover;
+    }
+
+    .card__body {
+        padding: 20px 20px 30px;
+        border-radius: 0;
+        border-bottom-right-radius: 13px;
+        border-bottom-left-radius: 13px;
+    }
+
+    .card__header {
+        max-width: 270px;
+    }
+
+    .card__desc {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}
