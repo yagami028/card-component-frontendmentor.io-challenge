@@ -139,8 +139,6 @@ body {
         border-top-left-radius: 13px;
         background-image: url('./images/image-product-mobile.jpg');
         background-size: cover;
-        position: absolute;
-        top: 0;
     }
 
     .card__body {
@@ -149,8 +147,6 @@ body {
         border-radius: 0;
         border-bottom-right-radius: 13px;
         border-bottom-left-radius: 13px;
-        position: absolute;
-        top: 240px;
     }
 
     .card_product {
