@@ -113,7 +113,6 @@ body {
     color: var(--clr-neutral-3);
     background: var(--clr-primary-1);
     border: none;
-    text-decoration: none;
     border-radius: 10px;
     font-weight: 600;
     cursor: pointer;
@@ -129,27 +128,38 @@ body {
 
 @media (max-width: 375px) {
     .card {
+        max-height: 613px;
         display: flex;
         flex-direction: column;
-        max-width: 343px;
+        max-width: 345px;
         align-items: center;
+       
     }
 
     .image-product {
-        width: 100%;
+        width: 345px;
         height: 240px;
         border-radius: 0;
         border-top-right-radius: 13px;
         border-top-left-radius: 13px;
         background-image: url('./images/image-product-mobile.jpg');
         background-size: cover;
+        position: absolute;
+        top: 0;
     }
 
     .card__body {
-        padding: 20px 20px 30px;
+        width: 345px;
+        padding: 25px;
         border-radius: 0;
         border-bottom-right-radius: 13px;
         border-bottom-left-radius: 13px;
+        position: absolute;
+        top: 240px;
+    }
+
+    .card_product {
+        margin-bottom: 15px;
     }
 
     .card__header {
@@ -157,7 +167,16 @@ body {
     }
 
     .card__desc {
-        font-size: 15px;
+        width: 280px;       
         line-height: 1.7;
+        margin-bottom: 50px;
+    }
+
+    .card__price {
+        margin-bottom: 20px;
+    }
+
+    .card__price__sale {
+        font-size: 28px;
     }
 }
